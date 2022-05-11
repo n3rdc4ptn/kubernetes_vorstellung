@@ -1,0 +1,7 @@
+{
+  "emmet.excludeLanguages": [],
+  "emmet.includeLanguages": {
+    "markdown": "html"
+  },
+  "tailwindCSS.emmetCompletions": true
+}
