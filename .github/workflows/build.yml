@@ -19,7 +19,7 @@ jobs:
         run: yarn
 
       - name: Build site
-        run: yarn build
+        run: yarn build --base ./
 
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
