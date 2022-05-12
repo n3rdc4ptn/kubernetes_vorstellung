@@ -3,7 +3,7 @@
 theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: img/crates.jpg
+background: /img/crates.jpg
 # apply any windi css classes to the current slide
 class: ''
 # https://sli.dev/custom/highlighters.html
@@ -111,7 +111,7 @@ CONTAINER ID   IMAGE  CREATED          STATUS          PORTS                NAME
 
 ---
 layout: image-right
-image: img/scaling.jpg
+image: /img/scaling.jpg
 ---
 
 # Skalierung von Containern
