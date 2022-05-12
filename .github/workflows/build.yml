@@ -12,9 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - run: echo ::set-env name=REPOSITORY_NAME::$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}' | sed -e "s/:refs//")
-        shell: bash
-
       - name: Checkout
         uses: actions/checkout@v2
 
@@ -22,7 +19,10 @@ jobs:
         run: yarn
 
       - name: Build site
-        run: yarn build --base /$REPOSITORY_NAME/
+        run: |
+          REPOSITORY_NAME=$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}' | sed -e "s/:refs//")
+
+          yarn build --base /$REPOSITORY_NAME/
 
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2

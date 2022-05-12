@@ -3,5 +3,8 @@
   "emmet.includeLanguages": {
     "markdown": "html"
   },
-  "tailwindCSS.emmetCompletions": true
+  "tailwindCSS.emmetCompletions": true,
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///Users/moritzreich/projects/tu_master/sem2_ios_lab/kubernetes_vorstellung/.github/workflows/build.yml"
+  }
 }
